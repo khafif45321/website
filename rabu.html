@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awallu Khafif | Website Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:
+        radial-gradient(circle at top left,#60a5fa 0%,transparent 30%),
+        radial-gradient(circle at bottom right,#93c5fd 0%,transparent 30%),
+        linear-gradient(180deg,#f8fafc,#eef6ff);
+    overflow-x:hidden;
+
+}
+
+header{
+   header{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.12),
+        inset 0 1px 0 rgba(255,255,255,.35);
+
+    transition: all .4s ease;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 30px;
+}
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#0d6efd,#4f9dff);
+    color:white;
+    padding-top:80px;
+}
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:50px;
+}
+
+.hero-text p{
+    margin:20px 0;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:white;
+    color:#0d6efd;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.hero img{
+    width:350px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+section{
+    padding:80px 0;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.about{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:350px;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 30px;
+    text-decoration:none;
+    border-radius:30px;
+    color:white;
+}
+
+.email{
+    background:#93c5fd ;
+}
+
+.wa{
+    background:#93c5fd ;
+}
+
+footer{
+    background:#93c5fd ;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero-content{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero img{
+margin-bottom:30px;
+width:250px;
+}
+
+.hero-text h1{
+font-size:35px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+
+<div class="logo">Awallu Khafif</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#layanan">Layanan</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+
+</nav>
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<div class="hero-text">
+
+<h1>Website Developer</h1>
+
+<p>
+Membangun website modern, cepat, responsif, dan profesional menggunakan HTML, CSS, JavaScript, PHP, MySQL, Bootstrap, dan Laravel.
+</p>
+
+<a href="#contact" class="btn">Hubungi Saya</a>
+
+</div>
+
+<img src="https://picsum.photos/400/400" alt="Profile">
+
+</div>
+
+</section>
+
+<section id="layanan">
+
+<div class="container">
+
+<div class="title">
+<h2>Layanan</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Website Company</h3>
+<p>Membuat website perusahaan modern dan profesional.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio</h3>
+<p>Membuat website portofolio pribadi yang menarik.</p>
+</div>
+
+<div class="card">
+<h3>Sistem Informasi</h3>
+<p>Aplikasi berbasis web menggunakan PHP dan MySQL.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<div class="title">
+<h2>Tentang Saya</h2>
+</div>
+
+<div class="about">
+
+<img src="https://picsum.photos/500/350" alt="Tentang">
+
+<div>
+
+<h3>Halo, Saya Awallu Khafif</h3>
+
+<p>
+Saya adalah Website Developer yang memiliki minat dalam pengembangan website modern, sistem informasi, dan desain antarmuka yang responsif.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container contact">
+
+<h2>Kontak</h2>
+
+<p>Silakan hubungi saya melalui:</p>
+
+<a href="mailto:mawallukhafif@gmail.com" class="email">Email</a>
+
+<a href="https://wa.me/628989701802" class="wa">WhatsApp</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Awallu Khafif. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
